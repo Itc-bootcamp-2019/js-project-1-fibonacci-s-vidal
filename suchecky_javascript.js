@@ -1,17 +1,18 @@
-function CalcFibo(number) {
-  let fibList = [0, 1];
-  for (i = 2; i <= number; i++) {
-    fibList[i] = fibList[i - 1] + fibList[i - 2];
-    fibList.push(fibList[i]);
+function calcFiboRecursion(number) {
+  if (number == 1) {
+    return 1;
+  } else if (number == 0) {
+    return 0;
+  } else {
+    return calcFiboRecursion(number - 1) + calcFiboRecursion(number - 2);
   }
-  return fibList[number];
 }
 
 function runFiboOnClick() {
   let userInput = document.getElementById("userInput").value;
-  let resultShown = (document.getElementById("y-val").innerText = CalcFibo(
-    userInput
-  ));
+  let resultShown = (document.getElementById(
+    "y-val"
+  ).innerText = calcFiboRecursion(userInput));
   return resultShown;
 }
 
