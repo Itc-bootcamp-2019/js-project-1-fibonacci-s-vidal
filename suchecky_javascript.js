@@ -1,20 +1,14 @@
-function calcFiboRecursion(number) {
-  if (number == 1) {
-    return 1;
-  } else if (number == 0) {
-    return 0;
-  } else {
-    return calcFiboRecursion(number - 1) + calcFiboRecursion(number - 2);
-  }
-}
-
-function runFiboOnClick() {
+function serverFibo() {
   let userInput = document.getElementById("userInput").value;
-  let resultShown = (document.getElementById(
-    "y-val"
-  ).innerText = calcFiboRecursion(userInput));
-  return resultShown;
+  fetch(`http://localhost:5050/fibonacci/${userInput}`)
+    .then(res => res.json())
+    .then(function(data) {
+      let dataResult = data.result;
+      let resultShown = (document.getElementById(
+        "y-val"
+      ).innerText = dataResult);
+    });
 }
 
 const myButton = document.getElementById("myButton");
-myButton.addEventListener("click", runFiboOnClick);
+myButton.addEventListener("click", serverFibo);
