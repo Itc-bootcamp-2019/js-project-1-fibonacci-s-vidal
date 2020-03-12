@@ -1,4 +1,52 @@
-imput-custom {
-  width: 20%;
-  border-radius: 15px;
+.input-custom {
+  width: 80%;
+  border-radius: 5px;
+  box-shadow: none;
+}
+
+.custom-spinner {
+  margin-left: 50%;
+}
+
+h1 {
+  font-size: 80px;
+}
+
+.text-size {
+  font-size: 20px;
+}
+
+.y-val {
+  display: none;
+}
+
+.show-result {
+  display: inline-block;
+  text-decoration: underline;
+  margin-left: 5%;
+  font-weight: bold;
+}
+.error-message {
+  color: red;
+  margin-left: 5%;
+}
+.row {
+  min-height: 80px;
+}
+.align-left {
+  text-align: left;
+}
+.show-error {
+  color: brown;
+  background-color: lightcoral;
+  border-radius: 5px;
+  border: 1px solid brown;
+  padding: 2%;
+}
+.input-error {
+  color: red;
+  border: 1px solid red;
+}
+.disappear {
+  display: none;
 }
