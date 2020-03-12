@@ -11,7 +11,11 @@
 h1 {
   font-size: 80px;
 }
-
+h2 {
+  display: inline-block;
+  font-size: 60px;
+  margin-bottom: 40px;
+}
 .text-size {
   font-size: 20px;
 }
@@ -49,4 +53,15 @@ h1 {
 }
 .disappear {
   display: none;
+}
+
+.ul-style {
+  list-style: none;
+  padding: 0%;
+}
+.underline {
+  border-bottom: 1px solid black;
+  padding: 1.5%;
+  padding-left: 0%;
+  font-size: 19.5px;
 }
