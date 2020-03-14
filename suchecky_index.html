@@ -26,23 +26,20 @@
       <div class="row align-items-center">
         <div class="col-sm-1"></div>
         <div class="col-sm-9">
-          <div class="row align-items-center">
-            <div class="col-sm-3">
-              <span class="text-size">The Fibonnaci of</span>
-            </div>
-            <div class="col-sm-2">
-              <input
-                id="userInput"
-                class="input-custom"
-                type="number"
-                placeholder="#"
-              />
-            </div>
-            <div class="col-sm-1">
-              <button id="buttonRunFib" type="button" class="btn btn-primary">
-                Is
-              </button>
-            </div>
+          <div class="row align-items-center custom-height">
+            <span class="text-size">The Fibonnaci of</span>
+
+            <input
+              id="userInput"
+              class="input-custom"
+              type="number"
+              placeholder="#"
+            />
+
+            <button id="buttonRunFib" type="button" class="btn btn-primary">
+              Is
+            </button>
+
             <div id="spin-id">
               <div
                 id="spinner"
@@ -50,17 +47,31 @@
                 role="status"
               ></div>
             </div>
-            <div class="col-sm-5 align-left">
-              <span class="show-result" id="y-val"></span>
-            </div>
+
+            <span class="show-result" id="y-val"></span>
           </div>
         </div>
-        <div class="col-sm-2"></div>
+        <div class="col-sm-1"></div>
       </div>
 
-      <div class="row align-items-center">
-        <div class="col-sm-2"></div>
-        <div class="col-sm-6"><span id="showError"></span></div>
+      <div class="row ">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-9">
+          <div id="CheckDisappear">
+            <div class="custom-control custom-checkbox custom-check">
+              <input
+                type="checkbox"
+                class="custom-control-input"
+                id="customCheck"
+                name="example1"
+              />
+              <label class="custom-control-label" for="customCheck"></label>
+            </div>
+            <span>Save Calculation</span>
+          </div>
+
+          <span id="showError"></span>
+        </div>
         <div class="col-sm-2"></div>
       </div>
 
@@ -73,6 +84,11 @@
           </span>
         </div>
         <div class="col-sm-2"></div>
+      </div>
+
+      <div class="row align-items-center">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-11"></div>
       </div>
 
       <div class="row align-items-center">
